@@ -1,0 +1,47 @@
+# ---- Build output (Maven) ----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ---- IDEs ----
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+out/
+bin/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs & temp ----
+*.log
+logs/
+*.tmp
+hs_err_pid*
+
+# ---- Secrets & local config (never commit) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+application-local.yml
+application-local.properties
+
+# ---- Local data volumes (docker compose) ----
+.data/
+pgdata/
+ollama/
+
+# ---- Claude (local only while repo is public) ----
+CLAUDE.local.md
+.claude/settings.local.json
